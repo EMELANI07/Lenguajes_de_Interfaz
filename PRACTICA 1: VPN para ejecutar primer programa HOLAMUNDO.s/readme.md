@@ -2,12 +2,19 @@
 
 
 **Información General**
+
 Nombre del estudiante: Estrada Rodriguez Melani
+
 Grupo / Materia: SC6C | Lenguajes de Interfaz  
+
 Docente: RENE SOLIS REYES
+
 Fecha de entrega: 13 de Febrero de 2026
+
 Arquitectura: ARM64 (AArch64)
+
 Sistema operativo: Linux
+
 Asciinema: https://asciinema.org/a/1SNXHWDo0BP9RdMP
 
 -------------------------------------------
