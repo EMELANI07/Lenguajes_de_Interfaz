@@ -1,4 +1,4 @@
-# Elabore practica en el emulador 8 bit Assembler ( emulador web )
+# Elabore práctica en el emulador 8 bit Assembler ( emulador web )
 
 👤 **Información General**
 
@@ -111,13 +111,15 @@ Estoy listo para ayudarte a depurarla y mejorarla 🚀
 
 🎯 **Ejercicio Propuesto:** Suma Acumulativa hasta Overflow
 
-Comience en 1
+Codigo ingresado:
+
+<img width="1365" height="601" alt="image" src="https://github.com/user-attachments/assets/cd3788a9-bfa3-46b6-8d46-256e9fb79f35" />
 
 Sume números consecutivos:
 ```codigo
 1 + 2 + 3 + 4 + 5 + ...
 ```
-**Suma 0 + 0 = 0**
+**0 = 0**
 
 <img width="670" height="513" alt="image" src="https://github.com/user-attachments/assets/1ad0d7cd-77b1-4f5d-accf-64ee7da85881" />
 
@@ -145,25 +147,33 @@ Sume números consecutivos:
 
 <img width="675" height="537" alt="image" src="https://github.com/user-attachments/assets/7a82efda-4afd-4e6a-a87e-cc9a8a034164" />
 
-**Suma 21 + 7 = 28**
+.
 
-<img width="675" height="539" alt="image" src="https://github.com/user-attachments/assets/d0609e09-4a88-43b5-94a0-b52bcc4561e2" />
+.
 
-**Suma 28 + 8 = 36**
+.
 
-<img width="677" height="540" alt="image" src="https://github.com/user-attachments/assets/dae15f50-4058-405a-b667-3cf062e72eaa" />
+.
 
-**Suma 36 + 9 = 45**
+**Suma 105 + 15 = 120**
 
-<img width="679" height="538" alt="image" src="https://github.com/user-attachments/assets/fbbec612-6d4c-42a3-83f7-ccd219f8d7f3" />
+<img width="687" height="533" alt="image" src="https://github.com/user-attachments/assets/0204d8fc-fbc9-42b5-b372-b44cc7b4b197" />
 
-**Suma 45 + 10 = 55**
+---
+## Conclusión
 
-<img width="675" height="535" alt="image" src="https://github.com/user-attachments/assets/88800d18-6f46-4b25-9993-3d7a9e24473b" />
+Con lo visto anteriormente se pudo observar un ejemplo aplicado a un simulador, en donde termina en el 120, ya que el Número 120 es el último digito antes del overflow si no seria 120 + 16 = 136, es como si fuera el último digito antes del desastre, el límite es 127, ya que si pasa de eso entonces Ra se convierte en -120, es decir, se convierte en número negativo para evitar eso se utiliza el overflow.
 
-La secuencia continua hasta el 255, ya que tiene poco alcance de memoria para no saturarlo.
+Un ejemplo que le pedí fue para entender mejor cómo se ponía el overflow para entenderlo, el ejemplo fue: 
 
-<img width="678" height="530" alt="image" src="https://github.com/user-attachments/assets/a8f65ab5-c445-4ba0-a591-d74494faa0cc" /> 
+```
+add Ra
+jo .end
+mov Rd, Ra
+```
+El ```mov Rd, Ra``` ocurre después del ```add```.
+
+Por eso se mostraba el 120, si quería que se mostrara el overflow solo es de cambiar de lugar esa línea.
 
 
 
